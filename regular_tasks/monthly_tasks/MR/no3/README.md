@@ -1,6 +1,10 @@
 ## 実行手順
 todo
 
+## ファイルの格納場所
+- [G:\共有ドライブ\DM課\DMイントラ\引継ぎ・代理対応\shasegawa_2409\notebook\作業エクセル
+20240808_SSP比較_共通広告主に限定.xlsx](https://docs.google.com/spreadsheets/d/1aiC7shaqKra6EEhbKIrei1HRaXUqjz44/edit?usp=drive_link&ouid=110042653407627959995&rtpof=true&sd=true)
+
 ## no.3メモ
 現在Excelで行なっている作業をSQLに落とし込む
 
