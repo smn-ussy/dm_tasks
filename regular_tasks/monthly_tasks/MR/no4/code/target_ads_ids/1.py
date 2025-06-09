@@ -31,8 +31,9 @@ from dm.domain_ads ads
     left join console.ssp s on ads.child_ssp_id=s.id
 where
     concat_ws('-', year, month, day) between '{start_at}' and '{end_at}'
-    and ads.advertiser_id not in({exclude_ads_id})
+    and ads.advertiser_id not in({exclude_ads_id}) -- ブラックリストは除外
     and child_ssp_id>0
+    and domain_id in ({top100_domain_id})
 group by 1,2,3,4,5,6,7
 """
 )
