@@ -1,3 +1,8 @@
+# 対象
+os = 'PC'
+is_app = '0'
+creative = 'display'
+
 query = (
 f"""
 select
@@ -9,9 +14,9 @@ select
 from
     {created_table_name} tmp
 WHERE
-    tmp.os IN ('PC')
-    AND tmp.is_app IN (0)
-    AND tmp.creative IN ('display')
+    tmp.os IN ('{os}')
+    AND tmp.is_app IN ({is_app})
+    AND tmp.creative IN ('{creative}')
 GROUP BY
     1,2,3,4
 ORDER BY
